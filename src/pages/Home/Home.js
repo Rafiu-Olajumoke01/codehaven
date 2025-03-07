@@ -1,13 +1,22 @@
 import React from 'react'
 import NavigationBar from './../../components/Navbar/Navbar'
 import Banner from '../Banner/Banner'
+import Courses from '../Courses/Courses'
 
 function Home() {
   return (
     <div>
-      <NavigationBar/>
+      <div className="navigationTag">
+        <NavigationBar />
+      </div>
 
-      <Banner/>
+      <div className="bannerTag">
+        <Banner />
+      </div>
+
+      <div className="coursesTag mt-5">
+        <Courses />
+      </div>
     </div>
   )
 }
