@@ -1,0 +1,114 @@
+/* General Navbar Styling */
+nav {
+    background-color: #162138;
+
+}
+
+.navbar {
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #162138;
+    z-index: 1000;
+
+}
+
+/* Navbar Brand (Logo) */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffa500 !important;
+    margin-right: 30px;
+}
+
+.haven {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff !important;
+    margin-right: 30px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white !important;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active,
+.navbar-nav .dropdown-item.active {
+    font-weight: bold;
+    color: white !important;
+    background-color: #ffa500 !important;
+    border-radius: 5px;
+}
+
+/* Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #ffa500 !important;
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    font-weight: bold;
+    color: white !important;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #ffa500 !important;
+}
+
+/* Mobile Menu Animation */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        max-height: 0;
+        overflow: hidden;
+        display: block;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .navbar.open .navbar-collapse {
+        max-height: 500px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+}
