@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.courses_section {
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    height: 20vh;
+}
+
+.all_courses,
+.vitual_class,
+.real_meeting {
+    display: inline;
+    color: #fff;
+    width: 30%;
+    height: 19vh;
+    background-color: #162138;
+    padding: 20px;
+    margin: 5px;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    /* Prevent content from shifting */
+}
+
+.all_courses p {
+    display: none;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.vitual_class p {
+    display: none;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.real_meeting p {
+    display: none;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.all_courses:hover {
+    transform: translateY(-10px);
+    background-color: orange;
+    height: 150px;
+}
+
+.vitual_class:hover {
+    transform: translateY(-10px);
+    background-color: orange;
+    height: 150px;
+}
+
+.real_meeting:hover {
+    transform: translateY(-10px);
+    background-color: orange;
+    height: 150px;
+}
+
+.all_courses:hover p {
+    display: block;
+    opacity: 1;
+}
+
+.vitual_class:hover p {
+    display: block;
+    opacity: 1;
+}
+
+.real_meeting:hover p {
+    display: block;
+    opacity: 1;
+}
+
+/* For tablets and smaller screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .courses_section {
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .all_courses,
+    .vitual_class,
+    .real_meeting {
+        width: 80%;
+        /* Increase width for better readability */
+        height: auto;
+        /* Allow content to define height */
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+/* For mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+
+    .all_courses,
+    .vitual_class,
+    .real_meeting {
+        width: 90%;
+        /* Full width on small screens */
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .all_courses:hover,
+    .vitual_class:hover,
+    .real_meeting:hover {
+        transform: translateY(-5px);
+        /* Less movement to prevent overflow */
+        height: auto;
+        /* Keep natural height */
+    }
+}
+

@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers vertically */
+    align-items: center;
+    /* Centers horizontally */
+    height: 100vh;
+    /* Ensures it takes full height */
+    background-image: url('./../../Assets/Grad School HTML5 Template/coming-soon-bg.jpg');
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainBanner {
+    background-color: #162138;
+    color: white;
+    padding: 60px 0;
+}
+
+.anycourseonline {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Make the heading big and take up space */
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Countdown Timer Styling */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.countdown-box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+}
+
+/* Make the countdown numbers bigger */
+.countdown-box .time {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Make the labels readable */
+.countdown-box .label {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffa500;
+    text-transform: uppercase;
+}
+
+/* FORM DESIGN */
+.register-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    /* Increased padding */
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    margin: auto;
+    min-height: 450px;
+    /* Makes the form longer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* More space between inputs */
+}
+
+.register-box input {
+    width: 100%;
+    padding: 14px;
+    /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    /* Bigger text */
+    outline: none;
+}
+
+.register-box button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 20px;
+    /* Bigger button */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.register-box button:hover {
+    background: darkorange;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .countdown-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .countdown-box .time {
+        font-size: 35px;
+    }
+
+    .countdown-box .label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    .countdown-container {
+        gap: 15px;
+    }
+
+    .countdown-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .countdown-box .time {
+        font-size: 30px;
+    }
+
+    .countdown-box .label {
+        font-size: 14px;
+    }
+}
